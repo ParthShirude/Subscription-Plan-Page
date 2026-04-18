@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+body ,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page {
+    height: auto;
+    background: linear-gradient(135deg, #8a2be2 , #2152e6 ,#4169e1 );
+}
+
+.page > h1 {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding-top: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 0;
+}
+
+.content {
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container1, .container2, .container3 {
+    margin: 2rem;
+    width: 350px;
+    height: 450px;
+    background: linear-gradient(225deg, #7e19dc, #a304e2);
+    border: 3px solid transparent;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container1:hover, .container2:hover, .container3:hover {
+    transform: scale(1.1);
+}
+
+.container1 h1, .container2 h1, .container3 h1 {
+    font-family: "Roboto Slab", serif;
+    color: rgba(6, 251, 243, 0.728);
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    width: 250px;
+    margin-left: 50px;
+    border-bottom: 2px solid #233c85;
+}
+
+.container1 ul, .container2 ul, .container3 ul {
+    align-items: center;
+    list-style-type: none;
+    width: 285px;
+    padding: 2rem;
+}
+
+.content li::before{
+    content: "\2713\0020";
+}
+
+.container1 li, .container2 li, .container3 li {
+    padding-bottom: 10px;
+    font-family: "Google Sans", sans-serif;
+}
+
+.container3 ul {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #4169e1;
+}
+
+.container2 ul {
+    padding-bottom: 55px;
+    border-bottom: 3px solid #4169e1;
+}
+
+.container1 ul {
+    padding-bottom: 155px;
+    border-bottom: 3px solid #4169e1;
+}
+
+.container2 button {
+    margin-top: 25px;
+}
+
+.container1 button, .container2 button, .container3 button {
+    display: block;
+    width: 100px;
+    margin-left: 125px;
+    padding: 5px;
+    margin-top: 25px;
+    background-color: #c81a82;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Google Sans", sans-serif;
+    transition:border 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container1 button:hover, .container2 button:hover, .container3 button:hover {
+    background-color: #ac2777;
+    border: 2px solid white;
+}
+
+.container1 .color, .container2 .color, .container3 .color {
+    color: #910358;
+    font-weight: bold;
+}
